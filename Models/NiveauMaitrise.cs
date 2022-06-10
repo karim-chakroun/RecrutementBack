@@ -1,12 +1,14 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace AppRecrutement.Models
 {
     public class NiveauMaitrise
     {
-        public Guid UserFk { get; set; }
-
+  
+        public string UserFk { get; set; }
+  
         public Guid LangageFk { get; set; }
 
         public string Mention { get; set; }

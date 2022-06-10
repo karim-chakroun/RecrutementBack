@@ -50,9 +50,9 @@ namespace AppRecrutement
 
 
 
-            services.AddDbContext<ProjectContext>(options =>
-            options.UseNpgsql(Configuration.GetConnectionString("IdentityConnection"))
-                );
+            //services.AddDbContext<ProjectContext>(options =>
+            //options.UseNpgsql(Configuration.GetConnectionString("IdentityConnection"))
+            //    );
 
 
 

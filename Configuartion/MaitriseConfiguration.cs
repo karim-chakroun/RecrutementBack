@@ -14,6 +14,14 @@ namespace AppRecrutement.MaitriseConfiguartion
                 f.UserFk,
                 f.LangageFk            
             });
+
+            builder.HasOne(f => f.User)
+            .WithMany(c => c.NiveauMaitrises)
+            .HasForeignKey(f => f.UserFk);
+
+            builder.HasOne(f => f.Language)
+           .WithMany(p => p.NiveauMaitrises)
+           .HasForeignKey(f => f.LangageFk);
         }
     }
 }
